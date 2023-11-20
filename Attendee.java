@@ -1,18 +1,21 @@
-public class Attendee {
-	String name;
-	int company;
-	String role;
-	String[] allergies;
-	int table;
-	int num;
+class Attendee {
+	private String firstName;
+	private String lastName;
+	private int company;
 	
-	public Attendee(String initName, int initCompany, String initRole, String[] initAllergies, int initTable, int initNum) {
-		name = initName;
+	public Attendee(String initfirstName, String initlastName, int initCompany) {
+		firstName = initfirstName;
+		lastName = initlastName;
 		company = initCompany;
-		role = initRole;
-		allergies = initAllergies;
-		table = initTable;
-		num = initNum;
 	}
-
+	
+	public String getFirst() {
+          return firstName;
+	}
+	public String getLast() {
+	  return lastName;	
+	}
+	public int getCompany() {
+	  return company;
+	}
 }
